@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB4DFD75255ACACE0059B071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DFD74255ACACE0059B071 /* AppDelegate.swift */; };
+		BB4DFD77255ACACE0059B071 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DFD76255ACACE0059B071 /* SceneDelegate.swift */; };
+		BB4DFD79255ACACE0059B071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DFD78255ACACE0059B071 /* ViewController.swift */; };
+		BB4DFD7C255ACACE0059B071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4DFD7A255ACACE0059B071 /* Main.storyboard */; };
+		BB4DFD7E255ACACE0059B071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4DFD7D255ACACE0059B071 /* Assets.xcassets */; };
+		BB4DFD81255ACACE0059B071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4DFD7F255ACACE0059B071 /* LaunchScreen.storyboard */; };
+		BB4DFD90255ACAFB0059B071 /* FirestoreWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BB4DFD8F255ACAFB0059B071 /* FirestoreWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB4DFD96255ACAFB0059B071 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4DFD94255ACAFB0059B071 /* Interface.storyboard */; };
+		BB4DFD98255ACAFC0059B071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4DFD97255ACAFC0059B071 /* Assets.xcassets */; };
+		BB4DFD9F255ACAFC0059B071 /* FirestoreWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB4DFD9E255ACAFC0059B071 /* FirestoreWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB4DFDA4255ACAFC0059B071 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DFDA3255ACAFC0059B071 /* InterfaceController.swift */; };
+		BB4DFDA6255ACAFC0059B071 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DFDA5255ACAFC0059B071 /* ExtensionDelegate.swift */; };
+		BB4DFDA8255ACAFC0059B071 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DFDA7255ACAFC0059B071 /* ComplicationController.swift */; };
+		BB4DFDAA255ACAFC0059B071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4DFDA9255ACAFC0059B071 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB4DFD91255ACAFB0059B071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB4DFD69255ACACE0059B071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4DFD8E255ACAFB0059B071;
+			remoteInfo = "FirestoreWatch WatchKit App";
+		};
+		BB4DFDA0255ACAFC0059B071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB4DFD69255ACACE0059B071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4DFD9D255ACAFC0059B071;
+			remoteInfo = "FirestoreWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB4DFDAF255ACAFC0059B071 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB4DFD9F255ACAFC0059B071 /* FirestoreWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DFDB3255ACAFC0059B071 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BB4DFD90255ACAFB0059B071 /* FirestoreWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BB4DFD71255ACACE0059B071 /* FirestoreAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirestoreAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4DFD74255ACACE0059B071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB4DFD76255ACACE0059B071 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB4DFD78255ACACE0059B071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB4DFD7B255ACACE0059B071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB4DFD7D255ACACE0059B071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB4DFD80255ACACE0059B071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB4DFD82255ACACE0059B071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4DFD88255ACAD80059B071 /* FirestoreAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirestoreAPI.entitlements; sourceTree = "<group>"; };
+		BB4DFD8C255ACAFB0059B071 /* FirestoreWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirestoreWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4DFD8F255ACAFB0059B071 /* FirestoreWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirestoreWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4DFD95255ACAFB0059B071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BB4DFD97255ACAFC0059B071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB4DFD99255ACAFC0059B071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4DFD9E255ACAFC0059B071 /* FirestoreWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FirestoreWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4DFDA3255ACAFC0059B071 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BB4DFDA5255ACAFC0059B071 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BB4DFDA7255ACAFC0059B071 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BB4DFDA9255ACAFC0059B071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB4DFDAB255ACAFC0059B071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB4DFD6E255ACACE0059B071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DFD9B255ACAFC0059B071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB4DFD68255ACACE0059B071 = {
+			isa = PBXGroup;
+			children = (
+				BB4DFD73255ACACE0059B071 /* FirestoreAPI */,
+				BB4DFD93255ACAFB0059B071 /* FirestoreWatch WatchKit App */,
+				BB4DFDA2255ACAFC0059B071 /* FirestoreWatch WatchKit Extension */,
+				BB4DFD72255ACACE0059B071 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB4DFD72255ACACE0059B071 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DFD71255ACACE0059B071 /* FirestoreAPI.app */,
+				BB4DFD8C255ACAFB0059B071 /* FirestoreWatch.app */,
+				BB4DFD8F255ACAFB0059B071 /* FirestoreWatch WatchKit App.app */,
+				BB4DFD9E255ACAFC0059B071 /* FirestoreWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB4DFD73255ACACE0059B071 /* FirestoreAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DFD88255ACAD80059B071 /* FirestoreAPI.entitlements */,
+				BB4DFD74255ACACE0059B071 /* AppDelegate.swift */,
+				BB4DFD76255ACACE0059B071 /* SceneDelegate.swift */,
+				BB4DFD78255ACACE0059B071 /* ViewController.swift */,
+				BB4DFD7A255ACACE0059B071 /* Main.storyboard */,
+				BB4DFD7D255ACACE0059B071 /* Assets.xcassets */,
+				BB4DFD7F255ACACE0059B071 /* LaunchScreen.storyboard */,
+				BB4DFD82255ACACE0059B071 /* Info.plist */,
+			);
+			path = FirestoreAPI;
+			sourceTree = "<group>";
+		};
+		BB4DFD93255ACAFB0059B071 /* FirestoreWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DFD94255ACAFB0059B071 /* Interface.storyboard */,
+				BB4DFD97255ACAFC0059B071 /* Assets.xcassets */,
+				BB4DFD99255ACAFC0059B071 /* Info.plist */,
+			);
+			path = "FirestoreWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		BB4DFDA2255ACAFC0059B071 /* FirestoreWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DFDA3255ACAFC0059B071 /* InterfaceController.swift */,
+				BB4DFDA5255ACAFC0059B071 /* ExtensionDelegate.swift */,
+				BB4DFDA7255ACAFC0059B071 /* ComplicationController.swift */,
+				BB4DFDA9255ACAFC0059B071 /* Assets.xcassets */,
+				BB4DFDAB255ACAFC0059B071 /* Info.plist */,
+			);
+			path = "FirestoreWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB4DFD70255ACACE0059B071 /* FirestoreAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4DFD85255ACACE0059B071 /* Build configuration list for PBXNativeTarget "FirestoreAPI" */;
+			buildPhases = (
+				BB4DFD6D255ACACE0059B071 /* Sources */,
+				BB4DFD6E255ACACE0059B071 /* Frameworks */,
+				BB4DFD6F255ACACE0059B071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirestoreAPI;
+			productName = FirestoreAPI;
+			productReference = BB4DFD71255ACACE0059B071 /* FirestoreAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB4DFD8B255ACAFB0059B071 /* FirestoreWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4DFDB4255ACAFC0059B071 /* Build configuration list for PBXNativeTarget "FirestoreWatch" */;
+			buildPhases = (
+				BB4DFD8A255ACAFB0059B071 /* Resources */,
+				BB4DFDB3255ACAFC0059B071 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB4DFD92255ACAFB0059B071 /* PBXTargetDependency */,
+			);
+			name = FirestoreWatch;
+			productName = FirestoreWatch;
+			productReference = BB4DFD8C255ACAFB0059B071 /* FirestoreWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		BB4DFD8E255ACAFB0059B071 /* FirestoreWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4DFDB0255ACAFC0059B071 /* Build configuration list for PBXNativeTarget "FirestoreWatch WatchKit App" */;
+			buildPhases = (
+				BB4DFD8D255ACAFB0059B071 /* Resources */,
+				BB4DFDAF255ACAFC0059B071 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB4DFDA1255ACAFC0059B071 /* PBXTargetDependency */,
+			);
+			name = "FirestoreWatch WatchKit App";
+			productName = "FirestoreWatch WatchKit App";
+			productReference = BB4DFD8F255ACAFB0059B071 /* FirestoreWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BB4DFD9D255ACAFC0059B071 /* FirestoreWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4DFDAC255ACAFC0059B071 /* Build configuration list for PBXNativeTarget "FirestoreWatch WatchKit Extension" */;
+			buildPhases = (
+				BB4DFD9A255ACAFC0059B071 /* Sources */,
+				BB4DFD9B255ACAFC0059B071 /* Frameworks */,
+				BB4DFD9C255ACAFC0059B071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FirestoreWatch WatchKit Extension";
+			productName = "FirestoreWatch WatchKit Extension";
+			productReference = BB4DFD9E255ACAFC0059B071 /* FirestoreWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB4DFD69255ACACE0059B071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					BB4DFD70255ACACE0059B071 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					BB4DFD8B255ACAFB0059B071 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					BB4DFD8E255ACAFB0059B071 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					BB4DFD9D255ACAFC0059B071 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = BB4DFD6C255ACACE0059B071 /* Build configuration list for PBXProject "FirestoreAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB4DFD68255ACACE0059B071;
+			productRefGroup = BB4DFD72255ACACE0059B071 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB4DFD70255ACACE0059B071 /* FirestoreAPI */,
+				BB4DFD8B255ACAFB0059B071 /* FirestoreWatch */,
+				BB4DFD8E255ACAFB0059B071 /* FirestoreWatch WatchKit App */,
+				BB4DFD9D255ACAFC0059B071 /* FirestoreWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB4DFD6F255ACACE0059B071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DFD81255ACACE0059B071 /* LaunchScreen.storyboard in Resources */,
+				BB4DFD7E255ACACE0059B071 /* Assets.xcassets in Resources */,
+				BB4DFD7C255ACACE0059B071 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DFD8A255ACAFB0059B071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DFD8D255ACAFB0059B071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DFD98255ACAFC0059B071 /* Assets.xcassets in Resources */,
+				BB4DFD96255ACAFB0059B071 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DFD9C255ACAFC0059B071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DFDAA255ACAFC0059B071 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB4DFD6D255ACACE0059B071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DFD79255ACACE0059B071 /* ViewController.swift in Sources */,
+				BB4DFD75255ACACE0059B071 /* AppDelegate.swift in Sources */,
+				BB4DFD77255ACACE0059B071 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4DFD9A255ACAFC0059B071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4DFDA6255ACAFC0059B071 /* ExtensionDelegate.swift in Sources */,
+				BB4DFDA4255ACAFC0059B071 /* InterfaceController.swift in Sources */,
+				BB4DFDA8255ACAFC0059B071 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB4DFD92255ACAFB0059B071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4DFD8E255ACAFB0059B071 /* FirestoreWatch WatchKit App */;
+			targetProxy = BB4DFD91255ACAFB0059B071 /* PBXContainerItemProxy */;
+		};
+		BB4DFDA1255ACAFC0059B071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4DFD9D255ACAFC0059B071 /* FirestoreWatch WatchKit Extension */;
+			targetProxy = BB4DFDA0255ACAFC0059B071 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB4DFD7A255ACACE0059B071 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB4DFD7B255ACACE0059B071 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB4DFD7F255ACACE0059B071 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB4DFD80255ACACE0059B071 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BB4DFD94255ACAFB0059B071 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB4DFD95255ACAFB0059B071 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB4DFD83255ACACE0059B071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB4DFD84255ACACE0059B071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB4DFD86255ACACE0059B071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FirestoreAPI/FirestoreAPI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2TWTY7FP9;
+				INFOPLIST_FILE = FirestoreAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parjanya.FirestoreAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB4DFD87255ACACE0059B071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FirestoreAPI/FirestoreAPI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2TWTY7FP9;
+				INFOPLIST_FILE = FirestoreAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parjanya.FirestoreAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB4DFDAD255ACAFC0059B071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2TWTY7FP9;
+				INFOPLIST_FILE = "FirestoreWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parjanya.FirestoreWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		BB4DFDAE255ACAFC0059B071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2TWTY7FP9;
+				INFOPLIST_FILE = "FirestoreWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parjanya.FirestoreWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		BB4DFDB1255ACAFC0059B071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2TWTY7FP9;
+				IBSC_MODULE = FirestoreWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "FirestoreWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parjanya.FirestoreWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		BB4DFDB2255ACAFC0059B071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2TWTY7FP9;
+				IBSC_MODULE = FirestoreWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "FirestoreWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parjanya.FirestoreWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		BB4DFDB5255ACAFC0059B071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TWTY7FP9;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parjanya.FirestoreWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB4DFDB6255ACAFC0059B071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2TWTY7FP9;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parjanya.FirestoreWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB4DFD6C255ACACE0059B071 /* Build configuration list for PBXProject "FirestoreAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DFD83255ACACE0059B071 /* Debug */,
+				BB4DFD84255ACACE0059B071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4DFD85255ACACE0059B071 /* Build configuration list for PBXNativeTarget "FirestoreAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DFD86255ACACE0059B071 /* Debug */,
+				BB4DFD87255ACACE0059B071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4DFDAC255ACAFC0059B071 /* Build configuration list for PBXNativeTarget "FirestoreWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DFDAD255ACAFC0059B071 /* Debug */,
+				BB4DFDAE255ACAFC0059B071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4DFDB0255ACAFC0059B071 /* Build configuration list for PBXNativeTarget "FirestoreWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DFDB1255ACAFC0059B071 /* Debug */,
+				BB4DFDB2255ACAFC0059B071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4DFDB4255ACAFC0059B071 /* Build configuration list for PBXNativeTarget "FirestoreWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4DFDB5255ACAFC0059B071 /* Debug */,
+				BB4DFDB6255ACAFC0059B071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB4DFD69255ACACE0059B071 /* Project object */;
+}
