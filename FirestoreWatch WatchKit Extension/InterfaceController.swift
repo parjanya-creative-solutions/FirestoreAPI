@@ -5,9 +5,19 @@
 //  Created by Krishnaprasad Jagadish on 10/11/20.
 //
 
+import Google
 import WatchKit
 import Foundation
 
+final class GroupeeFirestoreRepository: FirestoreProjectRepository {
+    @Resource(get: \.listDocumentsInCollection, from: "users") var documentList
+    
+    init() {
+        super.init(projectID: "groupee-a17e7")
+        
+        documentList = nil
+    }
+}
 
 struct userData: Encodable {
     var userID: String = ""
@@ -17,7 +27,8 @@ struct userData: Encodable {
     var effort: Int = 0
 }
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, CancellablesHolder {
+    let repository = GroupeeFirestoreRepository()
     
     @IBOutlet weak var startButton: WKInterfaceButton!
     var timer: Timer?
@@ -61,21 +72,24 @@ class InterfaceController: WKInterfaceController {
     
     
     func pushDataToFirebase() {
-       let heartRate = Int.random(in: 60...128)
+        let heartRate = Int.random(in: 60...128)
         let calories = Int.random(in: 1...100)
         let points = Int.random(in: 1...10)
         let effort = Int.random(in: 1...10)
         
-        
         let dataToBePushed = userData(userID:userUUID, heartRate: heartRate, calories: calories, points: points, effort: effort)
         
-        let jsonData = try! JSONEncoder().encode(dataToBePushed)
-        //TODO: Vatsal to use this data to push to Firebase
-        
+        do {
+            repository
+                .patch(try FirestoreEncoder().encode(dataToBePushed), at: "/users/\(userUUID)")
+                .store(in: cancellables)
+        } catch {
+            
+        }
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
     }
-
+    
 }

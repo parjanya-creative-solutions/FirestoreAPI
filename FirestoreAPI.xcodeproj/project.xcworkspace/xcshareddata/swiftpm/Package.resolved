@@ -1,0 +1,88 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "API",
+        "repositoryURL": "https://github.com/vmanot/API.git",
+        "state": {
+          "branch": "master",
+          "revision": "947649cf8153b93249d6628fff3e40d2545a3d5b",
+          "version": null
+        }
+      },
+      {
+        "package": "Compute",
+        "repositoryURL": "https://github.com/vmanot/Compute.git",
+        "state": {
+          "branch": "master",
+          "revision": "e080a7e707289b3b6f0712637310ff8216c9e4d7",
+          "version": null
+        }
+      },
+      {
+        "package": "FoundationX",
+        "repositoryURL": "https://github.com/vmanot/FoundationX.git",
+        "state": {
+          "branch": "master",
+          "revision": "f2e2fa2fe1f05448a6eadb773756097c84445a2e",
+          "version": null
+        }
+      },
+      {
+        "package": "Google",
+        "repositoryURL": "https://github.com/vmanot/Google",
+        "state": {
+          "branch": "master",
+          "revision": "7cb3a74bedaf34d321342fe00ddf6d51f4a3746d",
+          "version": null
+        }
+      },
+      {
+        "package": "Merge",
+        "repositoryURL": "https://github.com/vmanot/Merge.git",
+        "state": {
+          "branch": "master",
+          "revision": "192dec0769796e3c993023adf6e90ccc690b8890",
+          "version": null
+        }
+      },
+      {
+        "package": "NetworkKit",
+        "repositoryURL": "git@github.com:vmanot/NetworkKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "a2a7632cb551ce0e072ae0b4574440b4f60f35f4",
+          "version": null
+        }
+      },
+      {
+        "package": "Swallow",
+        "repositoryURL": "https://github.com/vmanot/Swallow.git",
+        "state": {
+          "branch": "master",
+          "revision": "bf1d0cdf2e9078d407de1a11f98e0552c0524bcd",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftUIX",
+        "repositoryURL": "https://github.com/SwiftUIX/SwiftUIX.git",
+        "state": {
+          "branch": "master",
+          "revision": "874c3eba9264a982e5c1fc3f74af75cd07685f43",
+          "version": null
+        }
+      },
+      {
+        "package": "Task",
+        "repositoryURL": "https://github.com/vmanot/Task.git",
+        "state": {
+          "branch": "master",
+          "revision": "75c4d456f0daa756c8c249c289de91db3bef95c8",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

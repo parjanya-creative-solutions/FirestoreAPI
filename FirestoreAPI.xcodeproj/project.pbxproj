@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,8 @@
 		BB4DFDA6255ACAFC0059B071 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DFDA5255ACAFC0059B071 /* ExtensionDelegate.swift */; };
 		BB4DFDA8255ACAFC0059B071 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DFDA7255ACAFC0059B071 /* ComplicationController.swift */; };
 		BB4DFDAA255ACAFC0059B071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4DFDA9255ACAFC0059B071 /* Assets.xcassets */; };
+		D482CD21255D0AB400F1F029 /* Google in Frameworks */ = {isa = PBXBuildFile; productRef = D482CD20255D0AB400F1F029 /* Google */; };
+		D482CD28255D0B4200F1F029 /* Google in Frameworks */ = {isa = PBXBuildFile; productRef = D482CD27255D0B4200F1F029 /* Google */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D482CD21255D0AB400F1F029 /* Google in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D482CD28255D0B4200F1F029 /* Google in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +117,7 @@
 				BB4DFD93255ACAFB0059B071 /* FirestoreWatch WatchKit App */,
 				BB4DFDA2255ACAFC0059B071 /* FirestoreWatch WatchKit Extension */,
 				BB4DFD72255ACACE0059B071 /* Products */,
+				D482CD26255D0B4200F1F029 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +169,13 @@
 			path = "FirestoreWatch WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		D482CD26255D0B4200F1F029 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +192,9 @@
 			dependencies = (
 			);
 			name = FirestoreAPI;
+			packageProductDependencies = (
+				D482CD20255D0AB400F1F029 /* Google */,
+			);
 			productName = FirestoreAPI;
 			productReference = BB4DFD71255ACACE0059B071 /* FirestoreAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +246,9 @@
 			dependencies = (
 			);
 			name = "FirestoreWatch WatchKit Extension";
+			packageProductDependencies = (
+				D482CD27255D0B4200F1F029 /* Google */,
+			);
 			productName = "FirestoreWatch WatchKit Extension";
 			productReference = BB4DFD9E255ACAFC0059B071 /* FirestoreWatch WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -267,6 +285,9 @@
 				Base,
 			);
 			mainGroup = BB4DFD68255ACACE0059B071;
+			packageReferences = (
+				D482CD1F255D0AB400F1F029 /* XCRemoteSwiftPackageReference "Google" */,
+			);
 			productRefGroup = BB4DFD72255ACACE0059B071 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -697,6 +718,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D482CD1F255D0AB400F1F029 /* XCRemoteSwiftPackageReference "Google" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vmanot/Google";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D482CD20255D0AB400F1F029 /* Google */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D482CD1F255D0AB400F1F029 /* XCRemoteSwiftPackageReference "Google" */;
+			productName = Google;
+		};
+		D482CD27255D0B4200F1F029 /* Google */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D482CD1F255D0AB400F1F029 /* XCRemoteSwiftPackageReference "Google" */;
+			productName = Google;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB4DFD69255ACACE0059B071 /* Project object */;
 }
