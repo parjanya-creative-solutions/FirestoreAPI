@@ -17,9 +17,18 @@ final class GroupeeFirestoreRepository: FirestoreProjectRepository {
         
         documentList = nil
     }
+    
+    func data(forUserID userID: String) -> AnyPublisher<userData, Error> {
+        self.getDocumentAtPath("users/\(userID)")
+            .successPublisher
+            .tryMap({ (document: FirestoreDocument) in
+                try FirestoreDecoder().decode(userData.self, from: document)
+            })
+            .eraseToAnyPublisher()
+    }
 }
 
-struct userData: Encodable {
+struct userData: Codable {
     var userID: String = ""
     var heartRate: Int = 0
     var calories: Int = 0

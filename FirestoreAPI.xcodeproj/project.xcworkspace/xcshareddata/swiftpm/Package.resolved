@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/vmanot/API.git",
         "state": {
           "branch": "master",
-          "revision": "947649cf8153b93249d6628fff3e40d2545a3d5b",
+          "revision": "f8d2d3847413cb5b974f780fc5ca9fd0eed691c5",
           "version": null
         }
       },
@@ -33,7 +33,7 @@
         "repositoryURL": "https://github.com/vmanot/Google",
         "state": {
           "branch": "master",
-          "revision": "7cb3a74bedaf34d321342fe00ddf6d51f4a3746d",
+          "revision": "cd3cb9c3a569d53a470e507568667b3b7b57ba44",
           "version": null
         }
       },
@@ -48,7 +48,7 @@
       },
       {
         "package": "NetworkKit",
-        "repositoryURL": "git@github.com:vmanot/NetworkKit.git",
+        "repositoryURL": "https://github.com/vmanot/NetworkKit.git",
         "state": {
           "branch": "master",
           "revision": "a2a7632cb551ce0e072ae0b4574440b4f60f35f4",
