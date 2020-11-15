@@ -11,6 +11,7 @@ import Foundation
 
 final class GroupeeFirestoreRepository: FirestoreProjectRepository {
     @Resource(get: \.listDocumentsInCollection, from: "users") var documentList
+    @UserDefault("userID", default: UUID().uuidString) var currentUserID: String
     
     init() {
         super.init(projectID: "groupee-a17e7")
@@ -40,25 +41,8 @@ class InterfaceController: WKInterfaceController, CancellablesHolder {
     let repository = GroupeeFirestoreRepository()
     
     @IBOutlet weak var startButton: WKInterfaceButton!
+    
     var timer: Timer?
-    var userUUID: String = ""
-    
-    override func awake(withContext context: Any?) {
-        // Configure interface objects here.
-        
-        if ( UserDefaults.standard.object(forKey: "userID") == nil) {
-            let userID = UUID().uuidString
-            UserDefaults.standard.setValue(userID, forKey: "userID")
-        } else {
-            userUUID = UserDefaults.standard.object(forKey: "userID") as! String
-        }
-    }
-    
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-    }
-    
-    
     
     @IBAction func startBtnClicked() {
         if let timer = self.timer {
@@ -67,38 +51,29 @@ class InterfaceController: WKInterfaceController, CancellablesHolder {
                 timer.invalidate()
             } else {
                 self.startButton.setTitle("Stop Pushing")
-                self.timer = Timer.scheduledTimer(withTimeInterval:  5.0 , repeats: true) { (timer) in
+                self.timer = Timer.scheduledTimer(withTimeInterval:  1 , repeats: true) { (timer) in
                     self.pushDataToFirebase()
                 }
             }
         } else {
             self.startButton.setTitle("Stop Pushing")
-            self.timer = Timer.scheduledTimer(withTimeInterval:  5.0 , repeats: true) { (timer) in
+            self.timer = Timer.scheduledTimer(withTimeInterval:  1 , repeats: true) { (timer) in
                 self.pushDataToFirebase()
             }
         }
     }
     
-    
     func pushDataToFirebase() {
-        let heartRate = Int.random(in: 60...128)
-        let calories = Int.random(in: 1...100)
-        let points = Int.random(in: 1...10)
-        let effort = Int.random(in: 1...10)
+        let dataToBePushed = userData(
+            userID: repository.currentUserID,
+            heartRate: Int.random(in: 60...128),
+            calories: Int.random(in: 1...100),
+            points: Int.random(in: 1...10),
+            effort: Int.random(in: 1...10)
+        )
         
-        let dataToBePushed = userData(userID:userUUID, heartRate: heartRate, calories: calories, points: points, effort: effort)
-        
-        do {
-            repository
-                .patch(try FirestoreEncoder().encode(dataToBePushed), at: "/users/\(userUUID)")
-                .store(in: cancellables)
-        } catch {
-            
-        }
+        repository
+            .patch(try! FirestoreEncoder().encode(dataToBePushed), at: "/users/\(repository.currentUserID)")
+            .store(in: cancellables)
     }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-    }
-    
 }

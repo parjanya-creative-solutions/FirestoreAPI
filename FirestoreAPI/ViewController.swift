@@ -54,12 +54,12 @@ class ViewController: UIViewController, CancellablesHolder {
         .sinkResult { result  in
             //print(result)
             do {
-            try self.processResult(result: result.get())
+                try self.processResult(result: result.get())
             } catch {
                 print("Error \(error)")
             }
         }
-        .store(in:     cancellables)
+        .store(in: cancellables)
     }
     
     func processResult(result: Array<userData>) {
