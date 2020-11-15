@@ -67,13 +67,13 @@ class InterfaceController: WKInterfaceController, CancellablesHolder {
                 timer.invalidate()
             } else {
                 self.startButton.setTitle("Stop Pushing")
-                self.timer = Timer.scheduledTimer(withTimeInterval: 1.0 / 5.0 , repeats: true) { (timer) in
+                self.timer = Timer.scheduledTimer(withTimeInterval:  5.0 , repeats: true) { (timer) in
                     self.pushDataToFirebase()
                 }
             }
         } else {
             self.startButton.setTitle("Stop Pushing")
-            self.timer = Timer.scheduledTimer(withTimeInterval: 1.0 / 5.0 , repeats: true) { (timer) in
+            self.timer = Timer.scheduledTimer(withTimeInterval:  5.0 , repeats: true) { (timer) in
                 self.pushDataToFirebase()
             }
         }
